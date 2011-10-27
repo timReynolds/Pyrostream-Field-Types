@@ -1,34 +1,32 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
- *  Field Type  
+ * PyroStreams Field Type 
  * 
  *
- * PyroStreams field type
+ * @package    PyroStreams Field Type
+ * @author	 <Author>
+ * @copyright  Copyright (c) 2011
+ * @link		 <Link>
  *
- * @package		PyroStreamsField Type
- * @author		
- * @copyright           Copyright (c) 2011
- * @link		
  */
 
-class Field_
+class Field_<FieldName>
 {
     /**
-     *
      * Required variables
      */
-    public $field_type_name 	= '';
-    public $field_type_slug	= '';
-    public $db_col_type		= '';
+    public $field_type_name = '<FieldName>';
+    public $field_type_slug	= '<FieldSlug>';
+    public $db_col_type		= '<FieldCol>';
+    
     /**
-     *
      * Optional variables 
      */
-    public $input_is_file	= FALSE;
-    public $extra_validation    =   '';
-    public $custom_parameters	= array();
-    public $lang		= array();
+    public $input_is_file	  = FALSE;
+    public $extra_validation  =   '';
+    public $custom_parameters = array();
+    public $lang		       = array();
     
     /**
      * create CI instance
@@ -44,7 +42,7 @@ class Field_
      * 
      * @param	array
      * @param	array
-     * @return	string
+     * @return string
      */
     function form_output($data)
     {
@@ -116,4 +114,4 @@ class Field_
         
     }    
 }
-/* End of file field..php */
+/* End of file field.<FieldName>.php */
