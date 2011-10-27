@@ -1,8 +1,8 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
- * Markdown Field Type based on 
- * <http://daringfireball.net/projects/markdown/>
+ *  Field Type  
+ * 
  *
  * PyroStreams field type
  *
