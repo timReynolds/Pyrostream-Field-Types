@@ -14,17 +14,18 @@
  
 class Field_markdown
 {
-	public $field_type_name 		= 'Markdown';
-	public $field_type_slug			= 'markdown';
-	public $db_col_type				= 'longtext';
-	public $custom_parameters		= array();
+	public $field_type_name     = 'Markdown';
+	public $field_type_slug     = 'markdown';
+	public $db_col_type         = 'longtext';
+	public $custom_parameters   = array();
+	public $version             = '1.0';
 	
 	/**
 	 * Output form input
 	 *
-	 * @param	array
-	 * @param	array
-	 * @return	string
+	 * @param   array
+	 * @param   array
+	 * @return  string
 	 */
 	public function form_output($data)
 	{
@@ -38,9 +39,9 @@ class Field_markdown
 	/**
 	 * Process before outputting
 	 *
-	 * @access	public
-	 * @param	array
-	 * @return	string
+	 * @access  public
+	 * @param   array
+	 * @return  string
 	 */
 	public function pre_output($input)
 	{
@@ -1554,4 +1555,4 @@ class Markdown_Parser {
 
 }
 
-/* End of file field.textarea.php */
+/* End of file field.markdown.php */
