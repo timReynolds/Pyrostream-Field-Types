@@ -6,7 +6,7 @@
  *
  * @package    PyroStreams Field Type
  * @author	 <Author>
- * @copyright  Copyright (c) 2011
+ * @copyright  Copyright (c) 2012
  * @link		 <Link>
  *
  */
