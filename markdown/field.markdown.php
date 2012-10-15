@@ -6,19 +6,19 @@
  *
  * For use with PyroStreams for PyroCMS
  *
- * @package		PyroStreams Markdown Field Type
- * @author		Tim Reynolds
- * @copyright	Copyright (c) 2011, Tim Reynolds
- * @link		http://timreynolds.me
+ * @package   PyroStreams Markdown Field Type
+ * @author    Tim Reynolds
+ * @copyright Copyright (c) 2011, Tim Reynolds
+ * @link      http://timreynolds.me
  */
- 
+
 class Field_markdown
 {
 	public $field_type_name     = 'Markdown';
 	public $field_type_slug     = 'markdown';
 	public $db_col_type         = 'longtext';
 	public $custom_parameters   = array();
-	public $version             = '1.0';
+	public $version             = '1.1';
 	
 	/**
 	 * Output form input
@@ -45,12 +45,11 @@ class Field_markdown
 	 */
 	public function pre_output($input)
 	{
-	    $parser = new Markdown_Parser;
+			$CI =& get_instance();
+			$CI->load->helper('markdown');
 	    	    
-	    return $parser->transform($input);
+	    return parse_markdown($input);
 	}
 }
-
-require_once(APPPATH.'libraries/Markdown_parser.php');
 
 /* End of file field.markdown.php */
