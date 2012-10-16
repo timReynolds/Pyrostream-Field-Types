@@ -26,4 +26,4 @@ This version of PyroCMS does not use Streams Core so you will be placing field t
 
 ### PyroCMS 1.3.2 with PyroStreams 1.1.2 and below
 
-With the older versions of PyroCMS, the field types were **not** stored in their own folder. Every field type will be in `/addons/<site_ref>/modules/streams/field_types/` or `/addons/shared_addons/modules/streams/field_types/`. Also, you really should upgrade to a newer version. It's much cooler now.
+This is no longer supported. You should upgrade to PyroCMS 2.0+
